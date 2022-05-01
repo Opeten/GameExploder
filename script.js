@@ -126,33 +126,33 @@ const ctrl1 = {
 controlers.push(ctrl1);
 document.addEventListener('keydown', function (e) {
     switch (e.code) {
-        case 'KeyA': ctrl0.left = true; break;
-        case 'KeyW': ctrl0.up = true; break;
-        case 'KeyS': ctrl0.down = true; break;
-        case 'KeyD': ctrl0.right = true; break;
-        case 'KeyE': ctrl0.btn1 = true; break;
+        case 'KeyA': ctrl1.left = true; break;
+        case 'KeyW': ctrl1.up = true; break;
+        case 'KeyS': ctrl1.down = true; break;
+        case 'KeyD': ctrl1.right = true; break;
+        case 'KeyE': ctrl1.btn1 = true; break;
 
-        case 'ArrowLeft': ctrl1.left = true; break;
-        case 'ArrowUp': ctrl1.up = true; break;
-        case 'ArrowDown': ctrl1.down = true; break;
-        case 'ArrowRight': ctrl1.right = true; break;
-        case 'Space': ctrl1.btn1 = true; break;
+        case 'ArrowLeft': ctrl0.left = true; break;
+        case 'ArrowUp': ctrl0.up = true; break;
+        case 'ArrowDown': ctrl0.down = true; break;
+        case 'ArrowRight': ctrl0.right = true; break;
+        case 'Space': ctrl0.btn1 = true; break;
     }
 });
 
 document.addEventListener('keyup', function (e) {
     switch (e.code) {
-        case 'KeyA': ctrl0.left = false; break;
-        case 'KeyW': ctrl0.up = false; break;
-        case 'KeyS': ctrl0.down = false; break;
-        case 'KeyD': ctrl0.right = false; break;
-        case 'KeyE': ctrl0.btn1 = false; break;
+        case 'KeyA': ctrl1.left = false; break;
+        case 'KeyW': ctrl1.up = false; break;
+        case 'KeyS': ctrl1.down = false; break;
+        case 'KeyD': ctrl1.right = false; break;
+        case 'KeyE': ctrl1.btn1 = false; break;
 
-        case 'ArrowLeft': ctrl1.left = false; break;
-        case 'ArrowUp': ctrl1.up = false; break;
-        case 'ArrowDown': ctrl1.down = false; break;
-        case 'ArrowRight': ctrl1.right = false; break;
-        case 'Space': ctrl1.btn1 = false; break;
+        case 'ArrowLeft': ctrl0.left = false; break;
+        case 'ArrowUp': ctrl0.up = false; break;
+        case 'ArrowDown': ctrl0.down = false; break;
+        case 'ArrowRight': ctrl0.right = false; break;
+        case 'Space': ctrl1.btn0 = false; break;
     }
 });
 
@@ -254,7 +254,7 @@ const eType1 = {
     spriteRightStopped: sprRightStop,
     height: 2,
     width: 1,
-    speed: 13,
+    speed: 5,
     control: 1,
 };
 
